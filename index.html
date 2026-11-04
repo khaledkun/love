@@ -1,0 +1,263 @@
+﻿<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#FFF6ED">
+  <title>حكايتنا — خالد و حنين</title>
+  <meta name="description" content="هدية من القلب.. حكايتنا من أول يوم لحد اليوم اللي بقينا فيه في بيت واحد.">
+  <meta property="og:title" content="حكايتنا — خالد و حنين">
+  <meta property="og:description" content="هدية من القلب.. حكايتنا لسه بتبدأ.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_EG">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='10' fill='%23FFD6C2'/%3E%3Cpath d='M16 25s-8-5.2-8-11a4.6 4.6 0 0 1 8-3 4.6 4.6 0 0 1 8 3c0 5.800-8 11-8 11z' fill='%23FF6F9F'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@300;400;600;700&family=Reem+Kufi:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css?v=6">
+</head>
+
+<body class="lock">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="heart" viewBox="0 0 24 24">
+        <path d="M12 21s-8.5-5.4-8.5-11.6A4.9 4.9 0 0 1 12 6.8a4.9 4.9 0 0 1 8.5 2.6C20.500 15.600 12 21 12 21z" />
+      </symbol>
+      <symbol id="bf" viewBox="0 0 24 24">
+        <path
+          d="M12 11C9 2 1 3 3 10c1 4 6 3 9 1zm0 0c3-9 11-8 9-1-1 4-6 3-9 1zM12 13c-4 1-7 5-5 8 2 2 5-2 5-8zm0 0c4 1 7 5 5 8-2 2-5-2-5-8z" />
+        <path d="M12 8v10" stroke="currentColor" stroke-width="1.200" fill="none" />
+      </symbol>
+      <symbol id="fl" viewBox="0 0 24 24">
+        <g>
+          <ellipse cx="12" cy="6" rx="3.200" ry="4.500" />
+          <ellipse cx="12" cy="6" rx="3.200" ry="4.500" transform="rotate(72 12 12)" />
+          <ellipse cx="12" cy="6" rx="3.200" ry="4.500" transform="rotate(144 12 12)" />
+          <ellipse cx="12" cy="6" rx="3.200" ry="4.500" transform="rotate(216 12 12)" />
+          <ellipse cx="12" cy="6" rx="3.200" ry="4.500" transform="rotate(288 12 12)" />
+        </g>
+        <circle cx="12" cy="12" r="2.600" fill="#FFD6C2" />
+      </symbol>
+      <symbol id="sp" viewBox="0 0 24 24">
+        <path d="M12 1l2.600 8.400L23 12l-8.400 2.600L12 23l-2.600-8.400L1 12l8.400-2.600z" />
+      </symbol>
+      <symbol id="squig" viewBox="0 0 120 12">
+        <path d="M2 6c10-8 10 8 20 0s10 8 20 0 10 8 20 0 10 8 20 0 10 8 18 0" fill="none" stroke="currentColor"
+          stroke-width="2.500" stroke-linecap="round" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="progress" aria-hidden="true"><i></i></div>
+
+  <div id="intro" role="dialog" aria-label="حكايتنا لسه بتبدأ">
+    <div class="deco" aria-hidden="true">
+      <svg class="d d1 flt">
+        <use href="#bf" />
+      </svg><svg class="d d2 flt">
+        <use href="#heart" />
+      </svg><svg class="d d3 flt">
+        <use href="#fl" />
+      </svg><svg class="d d4 flt">
+        <use href="#bf" />
+      </svg><svg class="d d5 flt">
+        <use href="#sp" />
+      </svg>
+    </div>
+    <div class="loader" id="loader" role="status"><svg>
+        <use href="#heart" />
+      </svg><span class="sr">ثواني وهنبدأ</span></div>
+    <button class="skip" id="skip" hidden>تخطي</button>
+    <div class="intro-in" id="introIn" hidden>
+      <svg class="intro-heart">
+        <use href="#heart" />
+      </svg>
+      <p class="intro-name">حنين</p>
+      <p class="intro-lines">في حكاية بدأت يوم ١٨ سبتمبر...<br>وبقت أجمل حاجة حصلتلي.</p>
+      <button class="btn" id="enter">تعالي أحكيلك حكايتنا</button>
+    </div>
+  </div>
+
+  <nav class="dots" id="dots" aria-label="أقسام الموقع"></nav>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="deco" aria-hidden="true">
+        <svg class="d h1 flt">
+          <use href="#bf" />
+        </svg><svg class="d h2 flt">
+          <use href="#heart" />
+        </svg><svg class="d h3 flt">
+          <use href="#fl" />
+        </svg><svg class="d h4 flt">
+          <use href="#sp" />
+        </svg><svg class="d h5 flt">
+          <use href="#bf" />
+        </svg>
+      </div>
+      <div class="hero-grid">
+        <div class="hero-text">
+          <span class="sticker rv">♡ هدية من القلب</span>
+          <h1 class="rv">حكايتنا <span>لسه بتبدأ</span><svg class="squig">
+              <use href="#squig" />
+            </svg></h1>
+          <p class="rv">ومن يوم ما دخلتي حياتي، بقى للمستقبل شكل تاني.</p>
+          <a href="#timeline" class="btn rv" data-go="timeline">كمّلي معايا</a>
+        </div>
+        <figure class="polaroid hero-photo rv">
+          <span class="tape"></span>
+          <img src="assets/photos/1.jpg" alt="خالد وحنين يوم كتب الكتاب" width="960" height="1280">
+          <svg class="pin p1">
+            <use href="#heart" />
+          </svg><svg class="pin p2">
+            <use href="#bf" />
+          </svg>
+        </figure>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="timeline" class="sec peach">
+      <header class="head rv">
+        <p class="kicker">محطات في الطريق</p>
+        <h2>حكايتنا</h2><svg class="squig">
+          <use href="#squig" />
+        </svg>
+      </header>
+      <div class="tl">
+        <article class="tl-item rv">
+          <div class="date"><b>١٨</b><span>سبتمبر<br>٢٠٢٥</span><svg>
+              <use href="#heart" />
+            </svg></div>
+          <h3>يوم الخطوبة</h3>
+          <p>اليوم اللي بقينا فيه لبعض بشكل رسمي.. وبدأت منه أجمل حكاية في حياتي.</p>
+        </article>
+        <article class="tl-item alt rv">
+          <div class="date"><b>٣٠</b><span>مايو<br>٢٠٢٦</span><svg>
+              <use href="#fl" />
+            </svg></div>
+          <h3>يوم كتب الكتاب</h3>
+          <p>اليوم اللي كتبنا فيه حكايتنا على الورق، وبقيتي فيه شريكة حياتي قدام ربنا وقلبي.</p>
+        </article>
+        <article class="tl-item rv">
+          <div class="date"><b>١٩</b><span>أغسطس<br>٢٠٢٦</span><svg>
+              <use href="#bf" />
+            </svg></div>
+          <h3>يوم الفرح</h3>
+          <p>اليوم اللي لبستي فيه أبيض، وبقى لينا بيت واحد وحياة واحدة.. وكل حاجة بدأت من هنا.</p>
+        </article>
+        <p class="future rv">والباقي لسه جاي... حياتنا كلها</p>
+      </div>
+    </section>
+
+    <!-- REASONS -->
+    <section id="reasons" class="sec">
+      <header class="head rv">
+        <h2 class="sm">عارفة؟ فيه حاجات كتير بحبها فيكي...</h2><svg class="squig">
+          <use href="#squig" />
+        </svg>
+      </header>
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <!-- LETTER -->
+    <section id="letter" class="sec lilac">
+      <header class="head rv">
+        <h2 class="sm">رسالة ليكي.. مش هتعرفي قد إيه معناها عندي.</h2><svg class="squig">
+          <use href="#squig" />
+        </svg>
+      </header>
+      <div class="env-zone" id="envZone">
+        <button class="env flt2 rv" id="env" aria-label="افتحي الرسالة">
+          <span class="env-back"></span><span class="env-paper"><svg>
+              <use href="#heart" />
+            </svg><i></i><i></i><i></i></span>
+          <span class="env-front"></span><span class="env-flap"></span>
+          <span class="seal"><svg>
+              <use href="#heart" />
+            </svg></span>
+        </button>
+        <p class="hint blink">دوسي على الظرف.. ده ليكي</p>
+      </div>
+      <div class="letter" id="letterBox" hidden>
+        <article class="paper"><svg class="l-heart">
+            <use href="#heart" />
+          </svg>
+          <div id="letterText"></div>
+        </article>
+        <div class="center"><button class="btn ghost" id="letterBtn">أظهري الرسالة كاملة</button></div>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section id="countdown" class="sec cream">
+      <header class="head rv">
+        <svg class="rings">
+          <use href="#heart" />
+        </svg>
+        <h2 class="sm" id="cdTitle">مش باقي كتير على اليوم اللي هنبقى فيه في بيت واحد.</h2>
+        <p class="sub" id="cdSub">اليوم اللي هتبقى فيه كل البدايات اللي بنحلم بيها حقيقة.</p>
+        <svg class="squig">
+          <use href="#squig" />
+        </svg>
+      </header>
+      <div class="cd rv" id="cd"></div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="sec peach">
+      <header class="head rv">
+        <p class="kicker">ألبوم</p>
+        <h2>أنا اتجوزت حتة من القمر</h2>
+        <p class="sub">وبإذن الله العمر كله ونحن مع بعض</p><svg class="squig">
+          <use href="#squig" />
+        </svg>
+      </header>
+      <div class="album" id="album"></div>
+    </section>
+
+    <!-- FINALE -->
+    <section id="finale" class="sec finale">
+      <div class="deco" aria-hidden="true">
+        <svg class="d f1 flt">
+          <use href="#heart" />
+        </svg><svg class="d f2 flt">
+          <use href="#bf" />
+        </svg><svg class="d f3 flt">
+          <use href="#fl" />
+        </svg><svg class="d f4 flt">
+          <use href="#sp" />
+        </svg>
+      </div>
+      <div class="ask rv" id="ask">
+        <h2>عارفة إيه أكتر حاجة نفسي فيها؟</h2>
+        <button class="btn big" id="tell">قوليلي</button>
+      </div>
+      <div class="reveal" id="reveal" hidden aria-live="polite"></div>
+    </section>
+  </main>
+
+  <div class="player" id="player" hidden>
+    <button id="pp" aria-label="شغّلي الأغنية"><svg class="ring" viewBox="0 0 44 44">
+        <circle cx="22" cy="22" r="19" />
+        <circle id="pr" cx="22" cy="22" r="19" />
+      </svg><svg class="ic" id="pi" viewBox="0 0 24 24">
+        <path d="M7 4l13 8-13 8z" />
+      </svg></button>
+    <button id="mu" aria-label="اكتمي الصوت" aria-pressed="false"><svg viewBox="0 0 24 24" id="mi">
+        <path d="M3 9v6h4l5 4V5L7 9zM16 9a4 4 0 0 1 0 6M19 6a8 8 0 0 1 0 12" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg></button>
+    <input type="range" id="vol" min="0" max="1" step=".02" value=".6" aria-label="مستوى الصوت">
+  </div>
+
+  <script src="assets/app.js?v=6"></script>
+</body>
+
+</html>
